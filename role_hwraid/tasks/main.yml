@@ -1,0 +1,17 @@
+---
+- name: Récupération de la clé gpg
+  apt_key:
+    url: https://hwraid.le-vert.net/debian/hwraid.le-vert.net.gpg.key
+    state: present
+
+- name: Installation du repo hwraid
+  apt_repository:
+    repo: "deb http://hwraid.le-vert.net/debian {{ ansible_distribution_release }} main"
+    state: present
+    filename: hwraid
+    update_cache: true
+ 
+- name: Installation de megacli et megaclisas-status
+  apt:
+    name: megacli,megaclisas-status
+    state: present
