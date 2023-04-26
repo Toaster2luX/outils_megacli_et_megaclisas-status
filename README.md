@@ -12,6 +12,8 @@ https://blog.izero.fr/ansible-installation-des-outils-megacli-et-megaclisas-stat
 
 ### Exemple
 -----------------
+
+```bash
 $ sudo megaclisas-status
 
 -- Controller information --
@@ -35,3 +37,4 @@ c0u0p6  | HDD  | SEAGATE ST1200MM0007 IS06S3L0MP68 | 1.090 TB | Online, Spun Up 
 -- Unconfigured Disk information --
 -- ID   | Type | Drive Model                       | Size     | Status              | Speed    | Temp | Slot ID  | LSI ID | Path
 c0uXpY  | HDD  | SEAGATE ST1200MM0007 IS06S3L0MPHA | 1.090 TB | Hotspare, Spun Up   | 6.0Gb/s  | 27C  | [32:7]   | 7      | N/A
+```
